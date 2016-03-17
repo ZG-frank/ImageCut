@@ -1,32 +1,26 @@
-﻿生成启动时间为 2015/12/7 16:23:43。
+﻿生成启动时间为 2016/3/17 10:19:19。
      1>项目“G:\code\GDALCUT\GDALCUT\GDALCUT.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IG:\code\gdal\include /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GDALAlgorithm.cpp GDALCutText.cpp
-         GDALCutText.cpp
+         F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IG:\code\gdal\include /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GDALAlgorithm.cpp GDALCutTest.cpp
+         GDALCutTest.cpp
      1>G:\code\gdal\include\gdal_priv.h(436): warning C4251: “GDALColorTable::aoEntries”: class“std::vector<GDALColorEntry,std::allocator<_Ty>>”需要有 dll 接口由 class“GDALColorTable”的客户端使用
                  with
                  [
                      _Ty=GDALColorEntry
                  ]
-     1>GDALCutText.cpp(126): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-     1>GDALCutText.cpp(130): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-     1>GDALCutText.cpp(137): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-     1>GDALCutText.cpp(138): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
          GDALAlgorithm.cpp
      1>G:\code\gdal\include\gdal_priv.h(436): warning C4251: “GDALColorTable::aoEntries”: class“std::vector<GDALColorEntry,std::allocator<_Ty>>”需要有 dll 接口由 class“GDALColorTable”的客户端使用
                  with
                  [
                      _Ty=GDALColorEntry
                  ]
-     1>GDALAlgorithm.cpp(31): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-     1>GDALAlgorithm.cpp(32): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
          正在生成代码...
        Link:
          F:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\code\GDALCUT\x64\Debug\GDALCUT.exe" /INCREMENTAL /NOLOGO /LIBPATH:G:\code\gdal\lib gdal_i.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\code\GDALCUT\x64\Debug\GDALCUT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\code\GDALCUT\x64\Debug\GDALCUT.lib" /MACHINE:X64 x64\Debug\GDALAlgorithm.obj
-         x64\Debug\GDALCutText.obj
+         x64\Debug\GDALCutTest.obj
          GDALCUT.vcxproj -> G:\code\GDALCUT\x64\Debug\GDALCUT.exe
      1>已完成生成项目“G:\code\GDALCUT\GDALCUT\GDALCUT.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.38
+已用时间 00:00:01.82
