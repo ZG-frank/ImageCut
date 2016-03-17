@@ -147,7 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GDALAlgorithm.cpp" />
-    <ClCompile Include="GDALCutText.cpp" />
+    <ClCompile Include="GDALCutTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GDALAlgCore.h" />
