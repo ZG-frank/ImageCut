@@ -19,10 +19,10 @@ extern "C" {
 	* @return  返回值，表示计算过程中出现的各种错误信息
 	*/
 	int  GDALALG_API ImageCut(const char * pszSrcFile, const char * pszDstFile, int  iStartX, int  iStartY, int  iSizeX, int  iSizeY,
-		const char * pszFormat = "GTiff", CProcessBase* pProcess = NULL);
+		const char * pszFormat = "BMP", CProcessBase* pProcess = NULL);
 
 	int  GDALALG_API ImageCutAuto(const char * pszSrcFile, const char * pszDstFile, int  iStartX, int  iStartY, int  iSizeX, int  iSizeY,
-		const char * pszFormat = "GTiff", CProcessBase* pProcess = NULL);
+		const char * pszFormat = "BMP", CProcessBase* pProcess = NULL);
 	/**
 	* @brief 图像AOI裁切（使用GDALWarp方法）
 	* @param pszSrcFile			输入文件路径
@@ -33,7 +33,7 @@ extern "C" {
 	* @return  返回值，表示计算过程中出现的各种错误信息
 	*/
 	int  GDALALG_API ImageCutByAOI(const char * pszSrcFile, const char * pszDstFile, const char * pszAOIWKT,
-		const char * pszFormat = "GTiff", CProcessBase* pProcess = NULL);
+		const char * pszFormat = "BMP", CProcessBase* pProcess = NULL);
 
 	/**
 	* @brief 图像重采样（使用RasterIO方法）
@@ -47,7 +47,7 @@ extern "C" {
 	*/
 
 	int  GDALALG_API ImageResample1(const char * pszSrcFile, const char * pszDstFile, double  dResX, double  dResY,
-		const char * pszFormat = "GTiff", CProcessBase* pProcess = NULL);
+		const char * pszFormat = "BMP", CProcessBase* pProcess = NULL);
 
 	/**
 	* @brief 图像重采样（使用GDALWarp方法）

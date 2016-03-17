@@ -28,8 +28,10 @@ int ImageCut(const char* pszSrcFile, const char* pszDstFile, int iStartX, int iS
 	int OriImageHigh = pSrcDS->GetRasterYSize();
 
 	// 确定裁切图像的宽高
-	int iDstWidth = 250 / 0.07;
-	int iDstHeight = 250 / 0.07;
+	//int iDstWidth = 250 / 0.07;
+	//int iDstHeight = 250 / 0.07;
+	int iDstWidth = iSizeX;
+	int iDstHeight = iSizeY;
 
 	//获取原图的仿射变换信息
 	double adfGeoTransform[6] = { 0 };
@@ -75,7 +77,7 @@ int ImageCut(const char* pszSrcFile, const char* pszDstFile, int iStartX, int iS
 		pProcess->SetMessage("裁切完成！");
 	//输出TFW文件
 
-	GDALWriteWorldFile(pszDstFile, "tfw", adfGeoTransform);
+	//GDALWriteWorldFile(pszDstFile, "tfw", adfGeoTransform);
 
 	return RE_SUCCESS;
 }
@@ -202,8 +204,10 @@ int ImageResample1(const char* pszSrcFile, const char* pszDstFile, double dResX,
 	int iSrcHeight = pSrcDS->GetRasterYSize();
 
 	// 根据采样比例计算重采样后的图像宽高
-	int iDstWidth = static_cast<int>(iSrcWidth  * dResX + 0.5);
-	int iDstHeight = static_cast<int>(iSrcHeight * dResY + 0.5);
+	/*int iDstWidth = static_cast<int>(iSrcWidth  * dResX);
+	int iDstHeight = static_cast<int>(iSrcHeight * dResY);*/
+	int iDstWidth = 256;
+	int iDstHeight = 256;
 
 	double adfGeoTransform[6] = { 0 };
 	pSrcDS->GetGeoTransform(adfGeoTransform);
@@ -271,8 +275,10 @@ int ImageResample2(const char* pszSrcFile, const char* pszDstFile, double dResX,
 	int iSrcHeight = pSrcDS->GetRasterYSize();
 
 	// 根据采样比例计算重采样后的图像宽高
-	int iDstWidth = static_cast<int>(iSrcWidth  * dResX + 0.5);
-	int iDstHeight = static_cast<int>(iSrcHeight * dResY + 0.5);
+	//int iDstWidth = static_cast<int>(iSrcWidth  * dResX + 0.5);
+	//int iDstHeight = static_cast<int>(iSrcHeight * dResY + 0.5);
+	int iDstWidth = 256;
+	int iDstHeight = 256;
 
 	double adfGeoTransform[6] = { 0 };
 	pSrcDS->GetGeoTransform(adfGeoTransform);
